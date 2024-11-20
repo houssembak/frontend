@@ -1,0 +1,76 @@
+/* Style pour la navbar */
+.navbar {
+    background-color: #f8f9fa;
+    /* Couleur de fond de la navbar */
+    padding: 0 15px;
+    /* Espacement horizontal */
+}
+
+/* Style pour le conteneur de la navbar */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    /* Aligne le logo à gauche et les éléments de navigation à droite */
+    align-items: center;
+}
+
+/* Style pour le logo */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Style pour les éléments de la navbar */
+.navbar-nav {
+    display: flex;
+    /* Utilisation de Flexbox pour aligner les éléments horizontalement */
+    align-items: center;
+    /* Aligne les éléments verticalement au centre */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Supprime les puces de la liste */
+}
+
+/* Style pour chaque élément de la navbar */
+.navbar-nav .nav-item {
+    margin-left: 20px;
+    /* Espacement entre les éléments */
+}
+
+/* Style pour les liens dans la navbar */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    /* Couleur du texte des liens */
+    font-weight: 500;
+}
+
+/* Style pour le bouton Dropdown dans la navbar */
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Style pour le bouton de toggle dans la navbar */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+/* Style pour les éléments de la navbar lorsque l'écran est réduit */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        /* Aligne les éléments verticalement pour les petits écrans */
+        margin-top: 10px;
+        /* Espacement au-dessus des éléments */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        /* Supprime l'espacement entre les éléments */
+        margin-bottom: 10px;
+        /* Espacement entre les éléments */
+    }
+}

@@ -1,0 +1,85 @@
+.update-product-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-product-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .update-product-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-product-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .update-product-form input[type="text"],
+  .update-product-form input[type="file"],
+  .update-product-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .update-product-form input[type="file"] {
+    border: none;
+  }
+  
+  .update-product-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-product-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .update-product-form p {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .update-product-form .message {
+    text-align: center;
+    color: #d9534f;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 600px) {
+    .update-product-form {
+      padding: 15px;
+    }
+  
+    .update-product-form h2 {
+      font-size: 20px;
+    }
+  
+    .update-product-form button {
+      font-size: 14px;
+    }
+  }
+  

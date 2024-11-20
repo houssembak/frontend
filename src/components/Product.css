@@ -1,0 +1,124 @@
+/* Product.css */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 produits par ligne */
+    gap: 20px;
+    /* Espace entre les cartes de produits */
+    padding: 20px;
+}
+
+.product-card {
+    position: relative;
+    /* Pour permettre un positionnement absolu du titre */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centrer le contenu verticalement */
+    align-items: center;
+    /* Centrer le contenu horizontalement */
+    cursor: pointer;
+    /* Change le curseur en main */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    /* Légère animation au survol */
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Le titre du produit est maintenant au centre de l'image */
+.product-card h3 {
+    position: absolute;
+    top: 50%;
+    /* Positionner au milieu verticalement */
+    left: 50%;
+    /* Positionner au milieu horizontalement */
+    transform: translate(-50%, -50%);
+    /* Centrer le texte */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fond semi-transparent */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    /* Caché par défaut */
+    transition: opacity 0.3s ease;
+    /* Transition douce pour l'apparition */
+}
+
+/* Au survol de l'image, le nom du produit apparaît */
+.product-card:hover h3 {
+    opacity: 1;
+    /* Rendre visible au survol */
+}
+
+/* Styles de pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.page-item {
+    margin: 0 5px;
+}
+
+.page-link {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-link:hover {
+    background-color: #e0e0e0;
+    /* Changement de couleur au survol */
+}
+/* Style pour le panier */
+.cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.cart-icon span {
+    margin-left: 10px;
+}
+
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}

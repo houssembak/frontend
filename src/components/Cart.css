@@ -1,0 +1,163 @@
+/* Cart.css */
+.cart-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.empty-cart {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.cart-items {
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-details {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-name {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.cart-item-quantity, .cart-item-price {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.remove-item-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.add-item-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.add-item-btn:hover {
+    background-color: blue;
+}
+.delete-item-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.delete-item-btn:hover {
+    background-color: green;
+}
+
+.remove-item-btn:hover {
+    background-color: #ff3333;
+}
+
+.cart-total {
+    text-align: right;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+
+
+.clear-cart-btn {
+    background-color: #f1c40f;
+    color: white;
+    padding: 8px 16px;  /* Réduit la taille du bouton en réduisant le padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;  /* Réduit la taille de la police */
+    margin-top: 10px;
+    margin-right: 10px; /* Ajoute de l'espace à droite du bouton */
+    margin-left: 10px;  /* Ajoute de l'espace à gauche du bouton */
+}
+
+.clear-cart-btn:hover {
+    background-color: #f39c12;
+}
+
+/* Si vous souhaitez espacer les boutons verticalement et horizontalement, vous pouvez aussi ajouter un container */
+.cart-total {
+
+    justify-content: flex-end;  
+    gap: 15px;  
+    margin-top: 20px;
+}
+
+
+.clear-cart1-btn {
+    background-color: green;
+    color: white;
+    padding: 8px 16px;  /* Réduit la taille du bouton en réduisant le padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;  /* Réduit la taille de la police */
+    margin-top: 10px;
+    margin-right: 10px; /* Ajoute de l'espace à droite du bouton */
+    margin-left: 10px;  /* Ajoute de l'espace à gauche du bouton */
+}
+
+.clear-cart1-btn:hover {
+    background-color: green;
+}
+
+/* Si vous souhaitez espacer les boutons verticalement et horizontalement, vous pouvez aussi ajouter un container */
+.cart1-total {
+
+    justify-content: flex-end;  
+    gap: 15px;  
+    margin-top: 20px;
+}
+

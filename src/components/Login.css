@@ -1,0 +1,36 @@
+body {
+  background-color: #9A616D;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.my-5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.small.text-muted {
+  color: #6c757d !important;
+}
+
+.small.text-muted:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

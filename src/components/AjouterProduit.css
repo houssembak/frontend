@@ -1,0 +1,79 @@
+.add-product-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-product-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .add-product-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-product-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .add-product-form input[type="text"],
+  .add-product-form input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .add-product-form input[type="file"] {
+    border: none;
+  }
+  
+  .add-product-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-product-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .add-product-form p {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 600px) {
+    .add-product-form {
+      padding: 15px;
+    }
+    
+    .add-product-form h2 {
+      font-size: 20px;
+    }
+  
+    .add-product-form button {
+      font-size: 14px;
+    }
+  }
+  
